@@ -1,0 +1,8 @@
+{
+  "name": "GARawHits",
+  "version": "0.0.1",
+  "dependencies": {
+        "@google-cloud/bigquery": "^2.1.0",
+        "@google-cloud/storage" : "2.5.0"    
+  }
+}
