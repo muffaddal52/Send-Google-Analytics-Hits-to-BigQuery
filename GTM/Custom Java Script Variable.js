@@ -7,8 +7,10 @@ function() {
     model.set('sendHitTask', function(sendModel) {
       var payload = sendModel.get('hitPayload'); 
       originalSendHitTask(sendModel);
-
-      $.post(endpoint, {
+	
+      // only reference jQuery as $ only if properly instanced otherwise the XHR
+      // Consider replacing with regular XMLHttpRequest() instructions
+      jQuery.post(endpoint, {
     	payload: JSON.stringify(payload)
       });
     });
